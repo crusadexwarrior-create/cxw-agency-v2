@@ -141,7 +141,7 @@
         headers: { 'Accept': 'application/json' }
       }).then(function (response) {
         if (response.ok) {
-          showStatus('success', 'Request received. We will reply within one business day to schedule your audit.');
+          showStatus('success', 'Request received. We will reply within one business day with your Growth Snapshot next steps.');
           form.reset();
         } else {
           showStatus('error', 'Something went wrong sending your request. Call 301-375-2990 or email info@cxw-agency.org.');
@@ -150,7 +150,7 @@
         showStatus('error', 'Network error. Please try again, or email info@cxw-agency.org directly.');
       }).finally(function () {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Book My Audit <span class="btn__arrow">→</span>';
+        submitBtn.innerHTML = 'Book My Growth Snapshot <span class="btn__arrow">→</span>';
       });
     });
   }

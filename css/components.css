@@ -994,10 +994,183 @@
   text-align: center;
 }
 
+/* ============ OUTCOME PILLARS (What We Build) ============ */
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pillar {
+  background: var(--cn-glass);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--cn-line-soft);
+  border-radius: var(--cn-radius-lg);
+  padding: 2rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s var(--cn-ease), box-shadow 0.3s ease;
+}
+
+.pillar::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: var(--cn-gold-grad);
+}
+
+.pillar:hover {
+  border-color: var(--cn-line);
+  transform: translateY(-5px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
+}
+
+.pillar__num {
+  font-family: var(--cn-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--cn-gold);
+}
+
+.pillar__title {
+  font-size: clamp(1.3rem, 2.4vw, 1.7rem);
+}
+
+.pillar__desc {
+  font-size: 0.95rem;
+}
+
+.pillar__outcome {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--cn-line-soft);
+  font-family: var(--cn-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cn-gold-bright);
+}
+
+/* ============ CONTENT-TO-CLIENT FLOW ============ */
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.flow__node {
+  background: var(--cn-surface);
+  border: 1px solid var(--cn-line-soft);
+  border-radius: 12px;
+  padding: 0.95rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 138px;
+  flex: 1 1 0;
+  transition: border-color 0.3s ease, transform 0.3s var(--cn-ease);
+}
+
+.flow__node:hover {
+  border-color: var(--cn-gold);
+  transform: translateY(-3px);
+}
+
+.flow__node--end {
+  border-color: var(--cn-gold);
+  background: linear-gradient(160deg, rgba(212, 164, 55, 0.14), var(--cn-surface));
+}
+
+.flow__label {
+  font-family: var(--cn-font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cn-gold);
+}
+
+.flow__title {
+  font-family: var(--cn-font-display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--cn-text);
+}
+
+.flow__desc {
+  font-size: 0.76rem;
+  color: var(--cn-text-muted);
+}
+
+.flow__arrow {
+  align-self: center;
+  color: var(--cn-gold);
+  font-size: 1rem;
+  opacity: 0.7;
+  flex: 0 0 auto;
+}
+
+/* ============ INDUSTRIES ============ */
+.industries {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.7rem;
+}
+
+.industry {
+  border: 1px solid var(--cn-line-soft);
+  border-radius: 11px;
+  background: var(--cn-surface);
+  padding: 1rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--cn-font-display);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--cn-text);
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s var(--cn-ease);
+}
+
+.industry::before {
+  content: '◆';
+  color: var(--cn-gold);
+  font-size: 0.5rem;
+  flex-shrink: 0;
+}
+
+.industry:hover {
+  border-color: var(--cn-line);
+  background: var(--cn-surface-hover);
+  transform: translateY(-2px);
+}
+
+.industries-note {
+  margin-top: 1.6rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--cn-text-muted);
+}
+
+/* ============ MODULES 3-COL VARIANT ============ */
+.modules--three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 1024px) {
   .modules {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .industries {
+    grid-template-columns: repeat(3, 1fr);
   }
   .process,
   .offers {
@@ -1030,6 +1203,16 @@
     max-width: 440px;
     margin-inline: auto;
   }
+  .pillars,
+  .modules--three {
+    grid-template-columns: 1fr;
+  }
+  .flow__arrow {
+    display: none;
+  }
+  .flow__node {
+    flex: 1 1 44%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1039,6 +1222,12 @@
   .audience,
   .proof-grid {
     grid-template-columns: 1fr;
+  }
+  .industries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flow__node {
+    flex: 1 1 100%;
   }
   .form-row {
     grid-template-columns: 1fr;
