@@ -1,0 +1,156 @@
+/* ============================================
+   CXW AGENCY — BASE / RESET / TYPOGRAPHY
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--cn-header-h) + 16px);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--cn-font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--cn-text);
+  background-color: var(--cn-black);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4 {
+  font-family: var(--cn-font-display);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--cn-text);
+}
+
+h1 {
+  font-size: clamp(2.4rem, 5.6vw, 4.1rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3.8vw, 2.7rem);
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+}
+
+p {
+  color: var(--cn-text-muted);
+}
+
+strong {
+  color: var(--cn-text);
+  font-weight: 600;
+}
+
+::selection {
+  background: var(--cn-gold);
+  color: var(--cn-black);
+}
+
+/* --- Shared text utilities --- */
+.text-gold {
+  background: var(--cn-gold-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.eyebrow {
+  font-family: var(--cn-font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cn-gold);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 22px;
+  height: 1px;
+  background: var(--cn-gold);
+  opacity: 0.7;
+}
+
+.section-sub {
+  max-width: 620px;
+  font-size: clamp(1rem, 1.6vw, 1.13rem);
+  color: var(--cn-text-muted);
+}
+
+/* --- Scroll reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.7s var(--cn-ease), transform 0.7s var(--cn-ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

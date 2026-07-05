@@ -1,0 +1,51 @@
+/* ============================================
+   CXW AGENCY — DESIGN TOKENS
+   Noir + Gold Command Center System
+   ============================================ */
+
+:root {
+  /* --- Noir backgrounds --- */
+  --cn-black: #070605;
+  --cn-black-2: #0c0a07;
+  --cn-black-3: #120f0a;
+  --cn-black-4: #181410;
+
+  /* --- Gold system --- */
+  --cn-gold: #d4a437;
+  --cn-gold-bright: #f2c75c;
+  --cn-gold-deep: #8f6b1e;
+  --cn-gold-dark: #5c4413;
+  --cn-gold-glow: rgba(242, 199, 92, 0.14);
+  --cn-gold-grad: linear-gradient(135deg, #f2c75c 0%, #d4a437 45%, #a87f24 100%);
+
+  /* --- Lines & surfaces --- */
+  --cn-line: rgba(212, 164, 55, 0.18);
+  --cn-line-soft: rgba(212, 164, 55, 0.09);
+  --cn-surface: rgba(242, 199, 92, 0.035);
+  --cn-surface-hover: rgba(242, 199, 92, 0.07);
+  --cn-glass: rgba(18, 15, 10, 0.72);
+
+  /* --- Text --- */
+  --cn-text: #f4efe4;
+  --cn-text-muted: #b5aa92;
+  --cn-text-dim: #857b68;
+
+  /* --- Status --- */
+  --cn-success: #86c993;
+  --cn-danger: #d97e6a;
+
+  /* --- Typography --- */
+  --cn-font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --cn-font-body: 'Inter', 'Segoe UI', sans-serif;
+  --cn-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
+
+  /* --- Scale --- */
+  --cn-container: 1180px;
+  --cn-radius: 14px;
+  --cn-radius-lg: 20px;
+  --cn-section-pad: clamp(4.5rem, 10vw, 8rem);
+  --cn-header-h: 76px;
+
+  /* --- Motion --- */
+  --cn-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
