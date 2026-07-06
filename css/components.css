@@ -1259,6 +1259,49 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* ============ OFFER LADDER 6-STEP VARIANT ============ */
+.offers--ladder {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* ============ SUBPAGE HERO ============ */
+.page-hero {
+  padding-top: calc(var(--cn-header-h) + clamp(3rem, 8vw, 5.5rem));
+  padding-bottom: clamp(2.5rem, 6vw, 4rem);
+  background:
+    radial-gradient(ellipse 60% 45% at 70% 8%, rgba(212, 164, 55, 0.09), transparent 70%),
+    radial-gradient(ellipse 45% 40% at 15% 90%, rgba(212, 164, 55, 0.05), transparent 70%);
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 760px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero__title {
+  font-family: var(--cn-font-serif);
+  font-weight: 900;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  line-height: 1.04;
+}
+
+.page-hero__title em {
+  font-style: italic;
+  color: var(--cn-gold);
+  text-shadow: 0 0 34px rgba(212, 164, 55, 0.28);
+}
+
+.page-hero__sub {
+  font-size: clamp(1rem, 1.7vw, 1.15rem);
+  max-width: 620px;
+}
+
 /* ============ BRAND EMBLEM PRESENCE ============ */
 
 /* Hero watermark — screen blend hides the logo's black square,

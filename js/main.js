@@ -159,7 +159,7 @@
         showStatus('error', 'Network error. Please try again, or email info@cxw-agency.org directly.');
       }).finally(function () {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = 'Book My Growth Snapshot <span class="btn__arrow">→</span>';
+        submitBtn.innerHTML = 'Submit My Growth Snapshot <span class="btn__arrow">→</span>';
       });
     });
   }

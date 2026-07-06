@@ -13,8 +13,10 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = req.url === '/' ? '/index.html' : req.url.split('?')[0];
-  filePath = path.join(__dirname, decodeURIComponent(filePath));
+  let urlPath = req.url === '/' ? '/index.html' : req.url.split('?')[0];
+  // Clean URLs: /ai-growth-audit -> ai-growth-audit.html (matches Cloudflare Pages behavior)
+  if (!path.extname(urlPath)) urlPath += '.html';
+  const filePath = path.join(__dirname, decodeURIComponent(urlPath));
   const ext = path.extname(filePath).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
   fs.readFile(filePath, (err, data) => {
