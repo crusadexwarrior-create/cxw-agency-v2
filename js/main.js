@@ -7,15 +7,26 @@
 (function () {
   'use strict';
 
-  /* ---------- Centralized booking link ----------
-     Single source of truth for the GoHighLevel / LeadConnector calendar.
-     To change the booking calendar sitewide, edit this one constant.
-     Every anchor whose href points at leadconnectorhq.com (or is tagged
-     with data-booking) is normalized to this URL on page load. */
+  /* ---------- Centralized booking links ----------
+     Single source of truth for the two GoHighLevel / LeadConnector calendars.
+     To change a calendar sitewide, edit its constant here. Anchors declare
+     which calendar they open via data-booking="audit" | "blueprint" — the
+     href in the HTML is the real link (works without JS); this normalizer
+     is a safety net that keeps every tagged anchor in sync with these
+     constants and enforces target/rel. Do NOT match by raw href pattern
+     here — the two calendars share the leadconnectorhq.com host, so a
+     blanket href match would collapse the Blueprint link into the Audit one. */
   var BOOKING_LINK_AI_GROWTH_AUDIT = 'https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm';
+  var BOOKING_LINK_COMMAND_BLUEPRINT = 'https://api.leadconnectorhq.com/widget/bookings/cxw-command-center-blueprint-s';
 
-  document.querySelectorAll('a[href*="leadconnectorhq.com"], a[data-booking]').forEach(function (a) {
-    a.href = BOOKING_LINK_AI_GROWTH_AUDIT;
+  var BOOKING_LINKS = {
+    audit: BOOKING_LINK_AI_GROWTH_AUDIT,
+    blueprint: BOOKING_LINK_COMMAND_BLUEPRINT
+  };
+
+  document.querySelectorAll('a[data-booking]').forEach(function (a) {
+    var key = a.getAttribute('data-booking');
+    if (BOOKING_LINKS[key]) a.href = BOOKING_LINKS[key];
     a.target = '_blank';
     a.rel = 'noopener noreferrer';
   });
