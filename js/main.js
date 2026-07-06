@@ -7,6 +7,19 @@
 (function () {
   'use strict';
 
+  /* ---------- Centralized booking link ----------
+     Single source of truth for the GoHighLevel / LeadConnector calendar.
+     To change the booking calendar sitewide, edit this one constant.
+     Every anchor whose href points at leadconnectorhq.com (or is tagged
+     with data-booking) is normalized to this URL on page load. */
+  var BOOKING_LINK_AI_GROWTH_AUDIT = 'https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm';
+
+  document.querySelectorAll('a[href*="leadconnectorhq.com"], a[data-booking]').forEach(function (a) {
+    a.href = BOOKING_LINK_AI_GROWTH_AUDIT;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+  });
+
   /* ---------- Header scroll state ---------- */
   var header = document.getElementById('site-header');
 
