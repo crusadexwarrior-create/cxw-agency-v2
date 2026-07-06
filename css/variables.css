@@ -36,6 +36,7 @@
 
   /* --- Typography --- */
   --cn-font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --cn-font-serif: 'Playfair Display', 'Georgia', serif;
   --cn-font-body: 'Inter', 'Segoe UI', sans-serif;
   --cn-font-mono: 'IBM Plex Mono', 'Consolas', monospace;
 

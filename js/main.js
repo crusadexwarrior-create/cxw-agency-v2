@@ -43,6 +43,15 @@
   /* ---------- Scroll reveal ---------- */
   var revealEls = document.querySelectorAll('.reveal');
 
+  /* Staggered card reveals: within each grid, cards cascade in one by one */
+  var staggerGroups = document.querySelectorAll('.modules, .pillars, .audience, .offers, .proof-grid, .process, .leak-list');
+  staggerGroups.forEach(function (group) {
+    var kids = group.querySelectorAll('.reveal');
+    kids.forEach(function (kid, i) {
+      kid.style.transitionDelay = (i * 75) + 'ms';
+    });
+  });
+
   if ('IntersectionObserver' in window) {
     var revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {

@@ -11,14 +11,47 @@
   <meta property="og:description" content="CXW Agency builds Content-to-Client Systems that connect content, website, funnel, follow-up, and AI-powered workflows into one brand growth engine.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cxw-agency.org">
-  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:image" content="https://cxw-agency.org/assets/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CXW Agency | Visibility. Credibility. Growth.">
+  <meta name="twitter:description" content="CXW Agency builds branded growth systems that make your business visible, trusted, and easier to buy from.">
+  <meta name="twitter:image" content="https://cxw-agency.org/assets/logo.png">
+  <meta name="theme-color" content="#070605">
+  <link rel="canonical" href="https://cxw-agency.org/">
 
   <link rel="icon" type="image/png" href="assets/logo.png">
+
+  <!-- Local business schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CXW Agency",
+    "url": "https://cxw-agency.org",
+    "logo": "https://cxw-agency.org/assets/logo.png",
+    "image": "https://cxw-agency.org/assets/logo.png",
+    "description": "CXW Agency builds branded growth systems that connect content, website, funnel, follow-up, and AI-powered workflows into one brand growth engine.",
+    "telephone": "+1-301-375-2990",
+    "email": "info@cxw-agency.org",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1300 Mercantile Ln",
+      "addressLocality": "Largo",
+      "addressRegion": "MD",
+      "postalCode": "20774",
+      "addressCountry": "US"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Samuel Davenport III"
+    }
+  }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -26,6 +59,13 @@
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body id="home">
+
+  <!-- Global cinematic backdrop -->
+  <div class="atmosphere" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <!-- ============ HEADER ============ -->
   <header class="header" id="site-header">
@@ -72,9 +112,17 @@
       <img src="assets/logo.png" alt="" class="hero__watermark" aria-hidden="true">
       <div class="container hero__inner">
         <div class="hero__content">
-          <span class="eyebrow">Visibility &middot; Credibility &middot; Growth</span>
-          <h1 class="hero__headline">Build a Brand System That Makes Your Business <span class="text-gold">Visible, Trusted, and Easier to Buy From</span>.</h1>
-          <p class="hero__sub">CXW Agency helps entrepreneurs and local businesses connect their content, website, funnel, follow-up, and AI-powered workflows into one system designed to attract attention, build trust, and generate customer opportunities.</p>
+          <span class="eyebrow">Brand System Agency</span>
+          <h1 class="hero__headline hero__headline--serif" aria-label="Turn Your Business Into a Brand That Works For You.">
+            <span aria-hidden="true">
+              <span class="hero__line">Turn Your</span>
+              <span class="hero__line">Business</span>
+              <span class="hero__line">Into a Brand</span>
+              <span class="hero__line">That</span>
+              <span class="hero__line hero__line--gold">Works For You.</span>
+            </span>
+          </h1>
+          <p class="hero__sub">CXW Agency builds branded growth systems that connect your content, website, funnel, follow-up, and AI-powered workflows into one system designed to attract attention, build trust, and generate customer opportunities.</p>
           <div class="hero__ctas">
             <a href="#book" class="btn btn--gold">Build My Brand System <span class="btn__arrow">→</span></a>
             <a href="#command-blueprint" class="btn btn--ghost">Get My CXW Command Blueprint</a>
@@ -506,6 +554,7 @@
               <a href="tel:+13013752990">301-375-2990</a>
               <a href="mailto:info@cxw-agency.org">info@cxw-agency.org</a>
               <span>1300 Mercantile Ln, Largo, MD 20774</span>
+              <a href="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm" target="_blank" rel="noopener noreferrer">Prefer to talk first? Book a call directly →</a>
             </div>
           </div>
 
@@ -561,7 +610,7 @@
             <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
 
             <button type="submit" class="btn btn--gold btn--block" id="form-submit">Book My Growth Snapshot <span class="btn__arrow">→</span></button>
-            <p class="lead-form__fine">Free diagnostic. No spam. No pressure.</p>
+            <p class="lead-form__fine">Free diagnostic. No spam. No pressure. Or <a href="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm" target="_blank" rel="noopener noreferrer" class="footer__credit-link">book a call directly</a>.</p>
           </form>
         </div>
       </div>
@@ -571,6 +620,7 @@
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
+    <img src="assets/logo.png" alt="" class="footer__watermark" aria-hidden="true">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand-block">
@@ -597,6 +647,7 @@
           <ul class="footer__list">
             <li><a href="tel:+13013752990" class="footer__link">301-375-2990</a></li>
             <li><a href="mailto:info@cxw-agency.org" class="footer__link">info@cxw-agency.org</a></li>
+            <li><a href="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm" target="_blank" rel="noopener noreferrer" class="footer__link">Book a Call</a></li>
             <li><span class="footer__link">1300 Mercantile Ln<br>Largo, MD 20774</span></li>
           </ul>
         </div>
