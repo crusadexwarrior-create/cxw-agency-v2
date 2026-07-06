@@ -79,34 +79,18 @@
     </section>
 
     <!-- BOOKING / EMBEDDED CALENDAR -->
-    <section id="book-blueprint" class="booking-section">
-      <div class="container">
-        <div class="booking-grid">
-          <div class="booking-copy reveal">
-            <span class="eyebrow">Reserve Your Session</span>
-            <h2>Book Your Command Blueprint Session.</h2>
-            <p class="booking-copy__sub">This is the deeper strategy session where we map the business system before anything gets built.</p>
-            <ul class="booking-list">
-              <li>Map your website, CRM, booking, follow-up, and content-to-client workflow</li>
-              <li>Identify what your Revenue Command Center needs to include</li>
-              <li>Leave with a clear blueprint you can use to build the system correctly</li>
-            </ul>
-            <p class="booking-trust">Strategy on paper first. Every page, pipeline stage, and workflow gets decided before implementation.</p>
-          </div>
-          <div class="booking-panel reveal">
-            <div class="booking-card">
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/bookings/cxw-command-center-blueprint-s"
-                class="booking-frame"
-                title="Book your CXW Command Blueprint session"
-                loading="lazy"
-                id="blueprint-booking-frame"></iframe>
-            </div>
-            <p class="booking-fallback">Calendar not loading? <a href="https://api.leadconnectorhq.com/widget/bookings/cxw-command-center-blueprint-s" target="_blank" rel="noopener noreferrer" data-booking="blueprint">Open it in a new tab →</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <booking-calendar-section
+      id="book-blueprint"
+      class="booking-section"
+      eyebrow="Reserve Your Session"
+      headline="Book Your *Command Blueprint* Session"
+      subheadline="This is the deeper strategy session where we map your business command system before anything gets built."
+      bullets='["Map your website, CRM, booking, follow-up, and content-to-client workflow","Identify what your Revenue Command Center needs to include","Leave with a clear implementation blueprint"]'
+      iframe-src="https://api.leadconnectorhq.com/widget/bookings/cxw-command-center-blueprint-s"
+      external-url="https://api.leadconnectorhq.com/widget/bookings/cxw-command-center-blueprint-s"
+      iframe-title="Book your CXW Command Blueprint session"
+      booking-key="blueprint">
+    </booking-calendar-section>
 
     <!-- WHAT IT IS -->
     <section class="section--raised" id="what-it-is">
@@ -252,6 +236,7 @@
     </div>
   </footer>
 
+  <script src="/js/booking-calendar-section.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>

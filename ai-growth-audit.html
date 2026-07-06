@@ -79,34 +79,18 @@
     </section>
 
     <!-- BOOKING / EMBEDDED CALENDAR -->
-    <section id="book-audit" class="booking-section">
-      <div class="container">
-        <div class="booking-grid">
-          <div class="booking-copy reveal">
-            <span class="eyebrow">Pick a Time</span>
-            <h2>Choose Your Free AI Growth Audit Slot.</h2>
-            <p class="booking-copy__sub">In 20 minutes, we'll review where your business may be leaking leads, follow-up, bookings, and revenue opportunities.</p>
-            <ul class="booking-list">
-              <li>Identify missed lead capture and follow-up gaps</li>
-              <li>Review your current website, booking, CRM, and content flow</li>
-              <li>Leave with a clear next step for what to fix first</li>
-            </ul>
-            <p class="booking-trust">No pressure. No tech overload. This is a working review, not a pitch.</p>
-          </div>
-          <div class="booking-panel reveal">
-            <div class="booking-card">
-              <iframe
-                src="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm"
-                class="booking-frame"
-                title="Book your free AI Growth Audit"
-                loading="lazy"
-                id="audit-booking-frame"></iframe>
-            </div>
-            <p class="booking-fallback">Calendar not loading? <a href="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm" target="_blank" rel="noopener noreferrer" data-booking="audit">Open it in a new tab →</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <booking-calendar-section
+      id="book-audit"
+      class="booking-section"
+      eyebrow="Pick a Time"
+      headline="Book Your Free *AI Growth Audit*"
+      subheadline="In 20 minutes, we'll identify where your business may be leaking leads, follow-up, booked appointments, and revenue opportunities."
+      bullets='["Review your website, booking, CRM, and follow-up flow","Identify missed lead capture and conversion gaps","Leave with a clear next step for what to fix first"]'
+      iframe-src="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm"
+      external-url="https://api.leadconnectorhq.com/widget/bookings/samuel-davenport-personal-calendar-hyjkpv2bm"
+      iframe-title="Book your free AI Growth Audit"
+      booking-key="audit">
+    </booking-calendar-section>
 
     <!-- WHAT WE REVIEW -->
     <section class="section--raised" id="what-we-review">
@@ -343,6 +327,7 @@
     </div>
   </footer>
 
+  <script src="/js/booking-calendar-section.js"></script>
   <script src="/js/main.js"></script>
 </body>
 </html>
