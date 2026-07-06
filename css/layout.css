@@ -448,3 +448,18 @@ section {
     text-align: center;
   }
 }
+
+/* ============ ABOUT / MISSION ============ */
+#about p {
+  max-width: 62ch;
+  color: var(--cn-text-muted);
+  margin-bottom: 1.1rem;
+}
+
+#about p strong {
+  color: var(--cn-gold-bright);
+}
+
+#about .founder__creds {
+  margin-top: 1.8rem;
+}
