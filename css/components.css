@@ -1840,3 +1840,63 @@ booking-calendar-section .container {
   color: var(--cn-text-dim);
   letter-spacing: 0.08em;
 }
+
+/* ============ TRUST STRIP ============ */
+.trust-strip {
+  padding-block: 1.6rem;
+  border-top: 1px solid var(--cn-line-soft);
+  border-bottom: 1px solid var(--cn-line-soft);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.trust-strip__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem 1.6rem;
+}
+
+.trust-strip__item {
+  font-family: var(--cn-font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cn-text-dim);
+  white-space: nowrap;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.trust-strip__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--cn-gold);
+}
+
+.trust-strip__item:first-child {
+  padding-left: 0;
+}
+
+.trust-strip__item:first-child::before {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .trust-strip__inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .trust-strip__item {
+    padding-left: 0;
+  }
+  .trust-strip__item::before {
+    display: none;
+  }
+}
