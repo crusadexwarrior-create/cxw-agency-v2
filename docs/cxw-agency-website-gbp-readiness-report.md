@@ -35,13 +35,16 @@ Prepared by: Claude Code operator session
 - `docs/google-business-profile-update-packet.md` — new
 - `docs/cxw-agency-website-gbp-readiness-report.md` — new (this file)
 
+## Decisions Closed (2026-07-07)
+
+- **Address:** GBP will be registered as a service-area business with the address hidden. The Mercantile Ln address stays on the website footer/legal pages for mailing purposes only.
+- **Hours:** 24/7 confirmed correct — a personal receptionist covers overflow and off-hours contact, so this is a real staffed commitment, not an unmonitored placeholder.
+
 ## Remaining TODOs
 
-- [ ] **Confirm the business address.** 1300 Mercantile Ln, Largo, MD 20774 is currently public on the site, in the footer, and in schema. Confirm this is a real, staffable location you're comfortable listing publicly on Google Business Profile — or register GBP as a service-area business with the address hidden instead.
-- [ ] **Set real business hours.** The site currently implies always-on availability in places; recommend picking real, answerable hours (e.g., Mon–Sat 9am–7pm) before publishing them on GBP — an unanswered call outside "24/7" hours reads worse than honest limited hours.
 - [ ] **Capture more proof.** Only one client build (The Mercenary Chef) is currently documented. The Proof section has five other placeholder cards awaiting real case studies.
 - [ ] **Add a sitemap.xml and robots.txt.** Neither exists yet. Low effort, meaningful for crawlability — can be generated from the current 6 public pages (home, ai-growth-audit, command-blueprint, revenue-command-center, terms, privacy).
-- [ ] **Decide on GBP messaging.** Only enable it if you can respond within a few hours consistently.
+- [ ] **Decide on GBP messaging.** Only enable it if the receptionist (or you) can respond within a few hours consistently — same standard as the phone line.
 
 ## Google Business Profile Manual Update Checklist
 
@@ -53,16 +56,16 @@ Name → Category → Description → Phone → Website → Booking link → Ser
 **Local SEO readiness: 78/100**
 Strong: consistent NAP, working schema with service catalog and area served, clean canonical URLs, no redirect issues (fixed last session), fast static-site load. Missing: sitemap.xml/robots.txt, no GBP live yet (the biggest single lever), limited backlink/citation profile.
 
-**Trust / professionalism: 84/100**
-Strong: no invented claims anywhere now, honest founder-led positioning, real client proof card, published legal pages with disclaimers, consistent contact info everywhere. Held back only by having a single proof case study and unconfirmed business-hours/address decisions.
+**Trust / professionalism: 89/100**
+Strong: no invented claims anywhere now, honest founder-led positioning, real client proof card, published legal pages with disclaimers, consistent contact info everywhere, and clear resolved decisions on address visibility and staffed 24/7 hours. Held back only by having a single proof case study — more real client work will raise this further.
 
 **Conversion readiness: 88/100**
 Strong: every page has a clear, working booking CTA, embedded live calendars (not just links), a defined offer ladder (Audit → Blueprint), and a real client build to point to as proof. Slight room to grow once more proof/social proof exists and GBP starts driving qualified local traffic.
 
 ## Next 5 Actions
 
-1. Confirm the address decision (public office vs. service-area/hidden) — this blocks the GBP verification method.
-2. Set real business hours and update them everywhere (site + GBP).
-3. Create the Google Business Profile using `docs/google-business-profile-update-packet.md` end to end.
-4. Request a review from Chef Nate using the templates in the packet — first real review is high-leverage proof.
-5. Add `sitemap.xml` and `robots.txt` (quick task, meaningful crawlability signal).
+1. Create the Google Business Profile using `docs/google-business-profile-update-packet.md` end to end — service-area business, address hidden, hours set to 24/7.
+2. Brief the receptionist on the CXW offer stack and booking link so off-hours calls convert instead of just getting answered.
+3. Request a review from Chef Nate using the templates in the packet — first real review is high-leverage proof.
+4. Add `sitemap.xml` and `robots.txt` (quick task, meaningful crawlability signal).
+5. Capture and publish a second proof case study to replace one of the placeholder Proof cards.

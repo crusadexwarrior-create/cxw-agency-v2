@@ -19,8 +19,10 @@ This file is the single source of truth for CXW Agency's public business informa
 | Service area | DMV (District of Columbia, Maryland, Virginia) |
 | Business model | Service-area / remote-first / appointment-based |
 | Social | https://crusadexwarrior.com |
+| GBP address visibility | **Hidden** — register as a service-area business, no public address pin |
+| Business hours | **24/7** — a personal receptionist covers off-hours contact, so this is a real operational commitment, not a placeholder |
 
-> **TODO:** Confirm whether 1300 Mercantile Ln is a real, staffable office/suite you can receive mail at, or intended as a virtual/registered-agent address only. This determines whether it should be public on Google Business Profile (see the GBP packet, Section 13).
+> Address remains listed in the website footer, Terms, and Privacy (for mailing/legal purposes) but will NOT be shown publicly on the Google Business Profile — GBP is configured as a service-area business per the owner's decision (2026-07-07).
 
 ## Core Services
 
@@ -74,3 +76,8 @@ When any core fact changes, update it in this exact order:
 
 - A brief circulated with phone number 240-601-0573. Confirmed with business owner: **301-375-2990 is correct** and remains the number of record everywhere. 240-601-0573 does not appear anywhere in the codebase as of this update — no cleanup was required, but flagging here in case that number resurfaces in a future brief without context.
 - Homepage hero previously displayed a "System Live" dashboard mockup with fabricated specific numbers (47 leads, 18 calls booked, +12/week deltas) presented as live activity. Relabeled "Sample System View" with qualitative labels (Logged / Automated / On Time) and an HTML comment marking it as illustrative, not real client data.
+
+## Known Inconsistencies Resolved This Session (2026-07-08)
+
+- Address decision: GBP will be registered as a service-area business with the address hidden. Confirmed by owner.
+- Hours decision: 24/7 is correct and intentional — a personal receptionist covers overflow/off-hours contact. Confirmed by owner; earlier concern about "24/7 reading as unstaffed" does not apply here.

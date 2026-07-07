@@ -138,6 +138,8 @@ Minimum 8 photos at launch. Add 2–4 monthly.
 
 ## 13. Verification Checklist
 
+**Decided (2026-07-07):** GBP will be registered as a **service-area business** — no public address pin. The 1300 Mercantile Ln address stays on the website (footer, Terms, Privacy) for mailing/legal purposes only; it will not be entered as a visible business location on the profile.
+
 Prepare before starting verification:
 - [ ] Business email ready: info@cxw-agency.org
 - [ ] Business phone answerable: 301-375-2990
@@ -145,7 +147,7 @@ Prepare before starting verification:
 - [ ] Proof of business operations: LLC/registration documents for CXW Agency, or business bank/invoice records
 - [ ] Service-area explanation ready in case Google asks: "CXW Agency operates as a service-area business based in Largo, MD, serving clients across the DMV. We do not receive walk-in visitors at a public location."
 - [ ] Video verification prep (most common for service-area businesses): be ready to show your workspace, branded materials, business email inbox, and CRM/dashboard on screen
-- [ ] **Do not use a home address publicly** unless you intentionally choose to and confirm it in `docs/business-profile-source-of-truth.md` first — currently 1300 Mercantile Ln, Largo, MD is the address on file; confirm it is appropriate for public display (see TODO in the source-of-truth doc)
+- [ ] When entering the address during setup, select "I deliver goods and services to my customers" / hide address — Google will still ask for an address internally for verification purposes even on a hidden-address profile, but it will not display publicly
 
 ---
 
@@ -157,9 +159,9 @@ Prepare before starting verification:
 - [ ] Phone: 301-375-2990
 - [ ] Website: https://cxw-agency.org
 - [ ] Booking link: https://cxw-agency.org/ai-growth-audit
-- [ ] Service area: DMV (set as service-area business, address hidden unless confirmed otherwise)
+- [ ] Service area: DMV — set as service-area business, address hidden
 - [ ] Services: add all 9 from Section 9
-- [ ] Hours: set real answerable hours (not 24/7 — see readiness report for why)
+- [ ] Hours: set to 24/7 (open all hours) — a personal receptionist covers off-hours contact, so this is accurate, not a placeholder
 - [ ] Photos: upload minimum 8 per Section 12
 - [ ] Posts: publish all 4 from Section 10
 - [ ] Messaging: enable if you can respond within a few hours; disable if not — an unanswered message thread looks worse than no messaging at all
