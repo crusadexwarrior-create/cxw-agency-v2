@@ -1804,3 +1804,39 @@ booking-calendar-section .container {
     padding: 1.5rem 1.4rem;
   }
 }
+
+/* ============ LEGAL PAGES ============ */
+.legal {
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.legal h2 {
+  font-size: 1.25rem;
+  margin: 2.4rem 0 0.9rem;
+}
+
+.legal p,
+.legal li {
+  color: var(--cn-text-muted);
+  line-height: 1.7;
+  font-size: 0.97rem;
+}
+
+.legal p {
+  margin-bottom: 1rem;
+}
+
+.legal ul {
+  margin: 0 0 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.legal .legal__updated {
+  font-family: var(--cn-font-mono);
+  font-size: 0.75rem;
+  color: var(--cn-text-dim);
+  letter-spacing: 0.08em;
+}
