@@ -5,3 +5,8 @@ nul
 *.log
 .env
 .claude/
+
+# Local working files — not part of the deployed site
+brag-output/
+assets/ChatGPT Image*.png
+assets/Mercenary.chef.png
