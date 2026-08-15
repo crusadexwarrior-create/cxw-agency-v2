@@ -177,7 +177,7 @@
           showStatus('success', 'Request received. We will reply within one business day with your Lead Snapshot next steps.');
           form.reset();
         } else {
-          showStatus('error', 'Something went wrong sending your request. Call 301-375-2990 or email info@cxw-agency.org.');
+          showStatus('error', 'Something went wrong sending your request. Call (240) 705-8509 or email info@cxw-agency.org.');
         }
       }).catch(function () {
         showStatus('error', 'Network error. Please try again, or email info@cxw-agency.org directly.');

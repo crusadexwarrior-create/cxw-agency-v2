@@ -12,7 +12,7 @@ CXW Agency
 https://cxw-agency.org
 
 ## 3. Phone
-301-375-2990
+(240) 705-8509
 
 ## 4. Booking URL
 https://cxw-agency.org/ai-growth-audit
@@ -115,7 +115,7 @@ Do not add an AI-specific category — no accurate one exists in Google's taxono
 > Thanks for the honest feedback, [Name]. You highlighted [issue] — that's fair, and it's something we've tightened up since. If there's anything on your system that needs attention, reach me directly at info@cxw-agency.org.
 
 **Negative review reply:**
-> [Name], thank you for telling me directly. This isn't the experience I want anyone to have with CXW. I'd like to understand what went wrong and make it right — please email me at info@cxw-agency.org or call 301-375-2990. I'll respond personally.
+> [Name], thank you for telling me directly. This isn't the experience I want anyone to have with CXW. I'd like to understand what went wrong and make it right — please email me at info@cxw-agency.org or call (240) 705-8509. I'll respond personally.
 
 Never buy, trade, gate, or fake reviews.
 
@@ -142,7 +142,7 @@ Minimum 8 photos at launch. Add 2–4 monthly.
 
 Prepare before starting verification:
 - [ ] Business email ready: info@cxw-agency.org
-- [ ] Business phone answerable: 301-375-2990
+- [ ] Business phone answerable: (240) 705-8509
 - [ ] Website live and matching: cxw-agency.org
 - [ ] Proof of business operations: LLC/registration documents for CXW Agency, or business bank/invoice records
 - [ ] Service-area explanation ready in case Google asks: "CXW Agency operates as a service-area business based in Largo, MD, serving clients across the DMV. We do not receive walk-in visitors at a public location."
@@ -156,7 +156,7 @@ Prepare before starting verification:
 - [ ] Business name: CXW Agency
 - [ ] Category: Marketing agency (primary) + secondaries from Section 6
 - [ ] Description: paste from Section 7
-- [ ] Phone: 301-375-2990
+- [ ] Phone: (240) 705-8509
 - [ ] Website: https://cxw-agency.org
 - [ ] Booking link: https://cxw-agency.org/ai-growth-audit
 - [ ] Service area: DMV — set as service-area business, address hidden

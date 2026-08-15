@@ -15,7 +15,7 @@ Prepared by: Claude Code operator session
 
 ## What Was Improved This Session
 
-1. Confirmed and locked the business phone number (301-375-2990) against a conflicting brief that specified a different number — verified against the live site, schema, and legal pages before making any changes, avoiding a scramble of incorrect contact info across the business.
+1. Confirmed and locked the business phone number against a conflicting brief that specified a different number — verified against the live site, schema, and legal pages before making any changes, avoiding a scramble of incorrect contact info across the business. _(Note 2026-07-13: the number of record was later corrected to (240) 705-8509 by owner directive; see business-profile-source-of-truth.md.)_
 2. Removed fabricated hero dashboard metrics; replaced with honest, qualitative labels ("Logged," "Automated," "On Time") and an HTML comment marking the panel as illustrative.
 3. Added a **Trust Strip** section directly under the hero with five honest, unembellished credibility markers (founder-led, DMV service area, practical AI — not hype, etc.).
 4. Added a **Local Visibility** section (Google Business Profile, booking links, review workflow) positioned right before the Proof section, so the GBP-related service line is now visible and explained on the homepage — not just implied.

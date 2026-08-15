@@ -11,7 +11,7 @@ This file is the single source of truth for CXW Agency's public business informa
 | Business name | CXW Agency |
 | Founder | Samuel "Honcho" Davenport III |
 | Website | https://cxw-agency.org |
-| Phone | 301-375-2990 |
+| Phone | (240) 705-8509 |
 | Email | info@cxw-agency.org |
 | Booking link | https://cxw-agency.org/ai-growth-audit |
 | Proof link | https://cxw-agency.org/#proof |
@@ -74,7 +74,12 @@ When any core fact changes, update it in this exact order:
 
 ## Known Inconsistencies Resolved This Session (2026-07-07)
 
-- A brief circulated with phone number 240-601-0573. Confirmed with business owner: **301-375-2990 is correct** and remains the number of record everywhere. 240-601-0573 does not appear anywhere in the codebase as of this update — no cleanup was required, but flagging here in case that number resurfaces in a future brief without context.
+- A brief circulated with phone number 240-601-0573. At that time (2026-07-07), confirmed with business owner that 301-375-2990 was correct. **Superseded 2026-07-13 (see below).**
+
+## Phone Number Correction (2026-07-13)
+
+- Business owner directed that the number of record is now **(240) 705-8509**. This replaces 301-375-2990 everywhere on the website (all HTML pages, JSON-LD schema, footer/contact links, legal pages, and the main.js form error message). All visible phone numbers are now `tel:`-linked for mobile tap-to-call.
+- **Live action still required:** the Google Business Profile listing itself must be updated to (240) 705-8509 manually — the website change does not update Google. See the GBP update packet.
 - Homepage hero previously displayed a "System Live" dashboard mockup with fabricated specific numbers (47 leads, 18 calls booked, +12/week deltas) presented as live activity. Relabeled "Sample System View" with qualitative labels (Logged / Automated / On Time) and an HTML comment marking it as illustrative, not real client data.
 
 ## Known Inconsistencies Resolved This Session (2026-07-08)
