@@ -1801,6 +1801,13 @@ booking-calendar-section .container {
   position: relative;
   flex: 0 0 42%;
   min-height: 280px;
+  /* Branded fallback backdrop. Sits behind the preview image and is fully
+     covered by it once loaded. If a preview ever fails to load (e.g. during a
+     fresh deploy's edge-cache propagation window), the img is hidden via its
+     onerror handler and this dark/gold backdrop shows instead of a browser
+     broken-image icon. */
+  background-color: #0a0908;
+  background-image: radial-gradient(circle at 32% 28%, rgba(242, 199, 92, 0.16), transparent 62%);
 }
 
 .proof-live__preview {
