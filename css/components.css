@@ -873,6 +873,18 @@
   box-shadow: 0 0 60px rgba(212, 164, 55, 0.22);
 }
 
+/* Founder portrait — real headshot treatment inside the visual card */
+.founder__portrait {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: var(--cn-radius);
+  border: 1px solid rgba(212, 164, 55, 0.35);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.55);
+}
+
 .founder__visual-name {
   text-align: center;
 }
