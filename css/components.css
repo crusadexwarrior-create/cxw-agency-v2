@@ -1871,6 +1871,23 @@ booking-calendar-section .container {
   margin-top: 0.5rem;
 }
 
+/* Capability tag row + build credit — used on case-study proof cards */
+.proof-live__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.proof-live__credit {
+  font-family: var(--cn-font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cn-text-dim);
+  margin-top: 0.65rem;
+}
+
 @media (max-width: 760px) {
   .proof-card--live {
     flex-direction: column;
